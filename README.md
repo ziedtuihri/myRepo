@@ -14,7 +14,39 @@ development". This might be close to a real 1.0 release, or pretty far (right af
 
 Usually, snapshot dependencies should only exist during development and no released version (i.e. no non-snapshot) should have a dependency on a snapshot version.<br>
 
-example of maven release process <br>
+3)  JAR Packaging <br>
+Essentially, it's a zipped file containing the compressed versions of .class files and resources of compiled Java libraries and applications.
+<br> 
+<pre>
+META-INF/
+    MANIFEST.MF
+com/
+    baeldung/
+        MyApplication.class
+</pre>
+
+The META-INF/MANIFEST.MF file may contain additional metadata about the files stored in the archive.<br>
+We can create a JAR file using the jar command or with tools like Maven.<br>
+<br>
+4) WAR Packaging <br>
+WAR stands for Web Application Archive or Web Application Resource.<br>
+These archive files have the .war extension and are used to package web applications that we can deploy on any Servlet/JSP container.<br>
+JSP is translated into Servlet before it is executed. So a JSP container must support Servlet.<br>
+<pre>
+META-INF/
+    MANIFEST.MF
+WEB-INF/
+    web.xml
+    jsp/
+        helloWorld.jsp
+    classes/
+        static/
+        templates/
+        application.properties
+    lib/
+        // *.jar files as libs
+</pre>
+
 
 
 
