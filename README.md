@@ -57,7 +57,7 @@ A modern server-side Java template engine for both web and standalone environmen
 Spring Boot Actuator. <br>
 Supports built in (or custom) endpoints that let you monitor and manage your application. <br>
 <br>
-<h3> difference between spring-boot-starter-parent and spring-boot-parent<h3>
+<h3> difference between spring-boot-starter-parent and spring-boot-parent</h3>
  
 Spring Boot Starter Parent helps us with managing dependency versions, the java version used by project and the default configuration for plug-ins, as we don't<br> have to specify a lot of things manually.go to <a href="https://stackoverflow.com/questions/56955525/need-to-know-the-difference-between-spring-boot-starter-parent-and-spring-boot-p" target="_blank">this</a><br>
 
