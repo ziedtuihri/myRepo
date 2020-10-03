@@ -46,8 +46,10 @@ WEB-INF/
         // *.jar files as libs
 </pre><br>
 5) Dependencies <br>
-Spring Web Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat.<br>
-Spring Data JPA Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate.<br>
+Spring Web Build web<br>
+including RESTful, applications using Spring MVC. Uses Apache Tomcat.<br>
+Spring Data JPA <br>
+Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate. ORM  (object-relational mapping) <br>
 H2 Database SQL<br>
 Provides a fast in-memory database that supports JDBC API and R2DBC access, with a small (2mb) footprint<br>
 Thymeleaf TEMPLATE ENGINES<br>
