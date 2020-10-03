@@ -56,6 +56,17 @@ Thymeleaf TEMPLATE ENGINES<br>
 A modern server-side Java template engine for both web and standalone environments. Allows HTML to be correctly displayed in browsers.<br>
 Spring Boot Actuator. <br>
 Supports built in (or custom) endpoints that let you monitor and manage your application. <br>
+<br>
+6) difference between spring-boot-starter-parent and spring-boot-parent<br>
+Spring Boot Starter Parent helps us with managing dependency versions, the java version used by project and the default configuration for plug-ins, as we don't<br> have to specify a lot of things manually.<br>
+
+It helps us with the following :<br>
+
+Configuration<br>
+Dependency management<br>
+Default plugin configuration (default configurations for maven-failsafe-plugin, maven-jar-plugin and maven-surefire-plugin etc)<br>
+According to spring-boot <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-build-systems.html">doc</a> :<br>
+The spring-boot-starter is the Core starter and provides functionalities including auto-configuration support, logging and YAML.It defines spring-boot-dependencies as the parent pom .<br>
 
 
 
