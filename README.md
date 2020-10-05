@@ -46,14 +46,28 @@ WEB-INF/
         // *.jar files as libs
 </pre><br>
 5) Dependencies <br>
-Spring Web Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat.<br>
-Spring Data JPA Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate.<br>
+Spring Web Build web<br>
+including RESTful, applications using Spring MVC. Uses Apache Tomcat.<br>
+Spring Data JPA <br>
+Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate. ORM  (object-relational mapping) <br>
 H2 Database SQL<br>
 Provides a fast in-memory database that supports JDBC API and R2DBC access, with a small (2mb) footprint<br>
 Thymeleaf TEMPLATE ENGINES<br>
 A modern server-side Java template engine for both web and standalone environments. Allows HTML to be correctly displayed in browsers.<br>
 Spring Boot Actuator. <br>
 Supports built in (or custom) endpoints that let you monitor and manage your application. <br>
+<br>
+<h3> difference between spring-boot-starter-parent and spring-boot-parent</h3>
+ 
+Spring Boot Starter Parent helps us with managing dependency versions, the java version used by project and the default configuration for plug-ins, as we don't<br> have to specify a lot of things manually.<br> for more information go to <a href="https://stackoverflow.com/questions/56955525/need-to-know-the-difference-between-spring-boot-starter-parent-and-spring-boot-p" target="_blank">this</a><br>
+
+It helps us with the following :<br>
+
+Configuration<br>
+Dependency management<br>
+Default plugin configuration (default configurations for maven-failsafe-plugin, maven-jar-plugin and maven-surefire-plugin etc)<br>
+According to spring-boot <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-build-systems.html" target="_blank">doc</a> :<br>
+The spring-boot-starter is the Core starter and provides functionalities including auto-configuration support, logging and YAML.It defines spring-boot-dependencies as the parent pom .<br>
 
 
 
