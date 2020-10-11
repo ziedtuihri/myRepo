@@ -1,14 +1,22 @@
-package com.example.springweb;
+package com.example.springweb.model;
 
+import com.example.springweb.Book;
 
-public class Author {
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
 /*
  * @Author: zied
  * @created: 04/10/2020
  */
+@Entity
+public class Author {
 
     private String firstName;
     private String lastName;
+    private Long id;
+    private Set<Book> books = new HashSet<>();
 
     public Author(){
 
@@ -35,4 +43,13 @@ public class Author {
         return lastName;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Long getId() {
+        return id;
+    }
 }
