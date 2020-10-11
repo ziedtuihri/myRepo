@@ -69,6 +69,12 @@ Default plugin configuration (default configurations for maven-failsafe-plugin, 
 According to spring-boot <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-build-systems.html" target="_blank">doc</a> :<br>
 The spring-boot-starter is the Core starter and provides functionalities including auto-configuration support, logging and YAML.It defines spring-boot-dependencies as the parent pom .<br>
 
+* Convention over Configuration <br>
+
+Luckily the Java community is really clever. They came up with a great idea to solve the XML hell problem. It was called Convention over Configuration.<br>
+
+That was a big step forward. Even today, I'm fond of the idea. Define a small set of rules - typically naming conventions - and write a framework based on this rule set.<br> Doing so allows you to drop most of your glue code. Pardon me - to drop most of your glue configuration. That's exactly the dreaded XML file.<br>
+
 
 
 
