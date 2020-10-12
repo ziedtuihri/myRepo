@@ -77,7 +77,7 @@ That was a big step forward. Even today, I'm fond of the idea. Define a small se
 <h3> JPA Hibernate  </h3>
 * springboot 2.3.4 while connecting to h2 database
 ```diff
--  Database "mem:testdb" not found, either pre-create it or allow remote database creation (not recommended in secure environments)
+-  database "mem:testdb" not found, either pre-create it or allow remote database creation (not recommended in secure environments)
 ```
 
 springweb/src/main/resources/application.properties add : <br>
