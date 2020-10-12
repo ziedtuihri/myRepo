@@ -92,6 +92,6 @@ spring.h2.console.path=/h2
 
 spring.datasource.url=jdbc:h2:mem:testdb
 </pre>
-
+and copy jdbc:h2:mem:testdb past in the input JDBC URL:
 
 
