@@ -76,10 +76,8 @@ Luckily the Java community is really clever. They came up with a great idea to s
 That was a big step forward. Even today, I'm fond of the idea. Define a small set of rules - typically naming conventions - and write a framework based on this rule set.<br> Doing so allows you to drop most of your glue code. Pardon me - to drop most of your glue configuration. That's exactly the dreaded XML file.<br>
 <h3> JPA Hibernate  </h3>
 * springboot 2.3.4 while connecting to h2 database
-Database "mem:testdb" not found, either pre-create it or allow remote database creation (not recommended in secure environments)
-
 ```diff
--  sdffsdfqsdfsd
+-  Database "mem:testdb" not found, either pre-create it or allow remote database creation (not recommended in secure environments)
 ```
 
 springweb/src/main/resources/application.properties add : <br>
