@@ -77,9 +77,12 @@ That was a big step forward. Even today, I'm fond of the idea. Define a small se
 <h3> JPA Hibernate  </h3>
 * springboot 2.3.4 while connecting to h2 database
 database "mem:testdb" not found, either pre-create it or allow remote database creation (not recommended in secure environments)
+
+
 ```diff
 -  fdfds fdsfsdf fdsfsdvcx fsdfdsf
 ```
+
 
 springweb/src/main/resources/application.properties add : <br>
 <pre>
