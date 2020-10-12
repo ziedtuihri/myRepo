@@ -79,7 +79,7 @@ That was a big step forward. Even today, I'm fond of the idea. Define a small se
 Database "mem:testdb" not found, either pre-create it or allow remote database creation (not recommended in secure environments)
 
 ```diff
-- text in red sdffsdfqsdfsd
+-  sdffsdfqsdfsd
 ```
 
 springweb/src/main/resources/application.properties add : <br>
