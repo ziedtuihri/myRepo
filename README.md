@@ -87,6 +87,11 @@ spring.h2.console.path=/h2
 
 spring.datasource.url=jdbc:h2:mem:testdb
 </pre>
-
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
 
 
