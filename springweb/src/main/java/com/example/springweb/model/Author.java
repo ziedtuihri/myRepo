@@ -1,8 +1,11 @@
 package com.example.springweb.model;
 
-import com.example.springweb.Book;
+import com.example.springweb.model.Book;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,6 +23,12 @@ public class Author {
 
     public Author(){
 
+    }
+
+    public Author(String firstName, String lastName, Set<Book> books) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.books = books;
     }
 
     public Author(String firstName, String lastName) {
@@ -51,5 +60,31 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
         return id;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if(this == obj) return true;
+        if((getClass() != obj.getClass()) || obj == null) return false;
+
+        Author author = (Author) obj;
+
+        return id != null ? id.equals(author.id) : author.id == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Autho {" +
+                "id = " + id +
+                ", First name " + firstName +
+                ", Last name " + lastName +
+                ", Books " + books + '}'
+                ;
     }
 }
