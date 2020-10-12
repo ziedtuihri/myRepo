@@ -74,11 +74,13 @@ The spring-boot-starter is the Core starter and provides functionalities includi
 Luckily the Java community is really clever. They came up with a great idea to solve the XML hell problem. It was called Convention over Configuration.<br>
 
 That was a big step forward. Even today, I'm fond of the idea. Define a small set of rules - typically naming conventions - and write a framework based on this rule set.<br> Doing so allows you to drop most of your glue code. Pardon me - to drop most of your glue configuration. That's exactly the dreaded XML file.<br>
-<h3> springboot 2.3.4 while connecting to h2 database </h3>
+<h3> JPA Hibernate  </h3>
+* springboot 2.3.4 while connecting to h2 database
 <h6 color="red"><div class="text-red mb-2">
 Database "mem:testdb" not found, either pre-create it or allow remote database creation (not recommended in secure environments)
 </div></h6>
-springweb/src/main/resources/applicationproperties add : <br>
+<span style="color: green"> Some green text </span>
+springweb/src/main/resources/application.properties add : <br>
 <pre>
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2
