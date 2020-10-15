@@ -2,10 +2,7 @@ package com.example.springweb.model;
 
 import com.example.springweb.model.Book;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,9 +13,13 @@ import java.util.Set;
 @Entity
 public class Author {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String firstName;
     private String lastName;
-    private Long id;
+
+    @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<>();
 
     public Author(){
@@ -34,6 +35,14 @@ public class Author {
     public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public void setBooks(Set<com.example.springweb.model.Book> books) {
+        this.books = books;
+    }
+
+    public Set<com.example.springweb.model.Book> getBooks() {
+        return books;
     }
 
     public void setFirstName(String firstName) {
@@ -56,8 +65,6 @@ public class Author {
         this.id = id;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
         return id;
     }
